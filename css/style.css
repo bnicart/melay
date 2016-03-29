@@ -7,6 +7,10 @@ body {
   display: none !important;
 }
 
+div p {
+  text-indent: 30px;
+}
+
 .slide-animate {
   padding:10px;
 }
@@ -35,4 +39,9 @@ body {
 }
 .slide-animate.ng-leave.ng-leave-active {
   top:50px;
+}
+
+
+hr, h2 {
+  margin: 0;
 }

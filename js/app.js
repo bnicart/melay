@@ -6,8 +6,8 @@ function appCtrl() {
       id: 1,
       title: "Computer-Based Information Systems", is_active: true,
       sub_topics: [
-        {id: 1, title: "Systems Analysis", by: "Melanie Mae S. Sta Ana - MAPA", is_active: true, url: "templates/1/1.html"},
-        {id: 2, title: "Systems Design and Implementation", by: "Melanie Mae S. Sta Ana - MAPA", is_active: false, url: "templates/1/2.html"},
+        {id: 1, title: "Systems Analysis - Systems Design and Implementation", by: "Melanie Mae S. Sta Ana - MAPA", is_active: true, url: "templates/1/1.html"},
+        // {id: 2, title: "", by: "Melanie Mae S. Sta Ana - MAPA", is_active: false, url: "templates/1/2.html"},
         {id: 3, title: "Transaction Processing Information Systems (TPIS)", by: "Jasmin U. Atela - MBA", is_active: false, url: "templates/1/3.html"},
         {id: 4, title: "Management Information Systems (MIS)", by: "Jasmin U. Atela - MBA", is_active: false, url: "templates/1/4.html"},
         {id: 5, title: "Decision Support Systems (DSS)", by: "Lucio Vergara - MAPA", is_active: false, url: "templates/1/5.html"},

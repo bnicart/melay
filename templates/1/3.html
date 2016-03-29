@@ -1,1 +1,229 @@
-<h1>Transaction Processing Information Systems (TPIS)</h1>
+<h2 class="text-center">Transaction Processing Information Systems (TPIS)</h2>
+
+<p>
+  Information systems have become vital for organizations today and in some industries, even survival is difficult without extensive use of information technology.
+</p>
+
+<p>
+  Different types of information systems must be developed to meet the whole array of information needs in a company: systems for processing transactions, management information systems and decision support systems.
+</p>
+
+<ol>
+  <li>Strategic level reports to provide managers with the information they need to plan activities</li>
+  <li>Tactical (and status) situation reports to enable management to draw up new or revised short-term plans (from 1 to 3 years)</li>
+  <li>Operational reports with daily information to keep managers fully informed of the company’s current situation</li>
+</ol>
+<img src="img/tpis_level.png" alt="" />
+
+<div class="">
+  <h3>Transaction Processing Systems (TPS)</h3>
+  <p>
+    Transaction processing systems are the cornerstones of a company’s information system and compile their daily business operations.
+    Collect, store, modify and retrieve the transactions of an organization.
+  </p>
+</div>
+
+<b>The four important characteristics of a TPS are:</b>
+<ul>
+  <li>RAPID RESPONSE</li>
+  <li>RELIABILITY</li>
+  <li>INFLEXIBILITY</li>
+  <li>CONTROLLED PROCESSING</li>
+</ul>
+
+<b>Types of Transaction Processing Systems</b>
+<ul>
+  <li>
+    Batch Transaction Processing
+    <div>
+      <b>Examples:</b>
+      <ul>
+        <li>CHEQUE CLEARANCE</li>
+        <li>BILL GENERATION</li>
+        <li>CREDIT CARD TRANSACTIONS</li>
+      </ul>
+    </div>
+  </li>
+  <li>
+    Real-Time Transaction Processing
+    <div>
+      <b>Two main concerns:</b>
+      <ul>
+        <li>CONCURRENCY</li>
+        <li>ATOMICITY</li>
+      </ul>
+    </div>
+    <div>
+      <b>Examples:</b>
+      <ul>
+        <li>RESERVATION SYSTEMS</li>
+        <li>POS TERMINALS</li>
+        <li>LIBRARY LOAN SYSTEM</li>
+      </ul>
+    </div>
+  </li>
+</ul>
+
+<div class="">
+  <b>Data Validation</b><span> is used to check the entry of transaction data. Involves procedures to ensure transactions are correct and accurately stored in the database.</span>
+  <ul>
+    <li>TRANSACTION INITIATION</li>
+    <li>FIELD CHECKING</li>
+  </ul>
+</div>
+
+<div class="">
+  <b>Storing and retrieving</b>
+  <p>
+    A TPS requires an efficient method for the storage and retrieval of data such as a database or a data warehouse.
+  </p>
+</div>
+
+<div class="">
+  A <b>database</b> <span> is an organized collection of data.</span>
+  <p>Types of database: </p>
+  <ul>
+    <li>Hierarchical database
+      <img src="img/hierarchical_db.png" alt="" />
+    </li>
+    <li>Network database
+      <img src="img/network_db.png" alt="" />
+    </li>
+    <li>Relational database
+      <img src="img/relational_db.png" alt="" />
+    </li>
+  </ul>
+</div>
+
+<div class="">
+  <b>Important features in designing a database for RTTP:</b>
+  <ul>
+    <li>Good data placement</li>
+    <li>Short transactions</li>
+    <li>Real-time backups</li>
+    <li>High normalization</li>
+    <li>Archiving of historical data</li>
+    <li>Good hardware configuration</li>
+  </ul>
+</div>
+
+<div class="">
+  <b>Types of file in TPS</b>
+  <ul>
+    <li>MASTER FILE</li>
+    <li>TRANSACTION FILE</li>
+    <li>REPORT FILE</li>
+    <li>WORK FILE</li>
+    <li>PROGRAM FILE</li>
+  </ul>
+</div>
+
+<div class="">
+  <p>
+    A <b>DATA WAREHOUSE</b> is a database that collects information from different data sources. Data is gathered in real-time transactions can be used for analysis in an efficient manner if it is stored in a data warehouse. Provides data that is:
+  </p>
+  <ul>
+    <li>CONSOLIDATED</li>
+    <li>SUBJECT-ORIENTATED</li>
+    <li>HISTORICAL</li>
+    <li>READ-ONLY</li>
+  </ul>
+</div>
+
+<div class="">
+  <b>Backup and Recovery Procedures</b>
+  <p>
+    A <b>backup</b> is another copy of the data that could be used to rebuild the system. If the system goes down, the recovery process rebuilds the system.
+  </p>
+</div>
+
+<div class="">
+  <b>Recovery process</b>
+  <p>
+    A TPS may fail for a number of reasons, such as system failures, human error, hardware failure, incorrect or invalid data, program errors, computer viruses or natural disasters.
+  </p>
+  <ul>
+    <li>BACKUP</li>
+    <li>JOURNAL</li>
+    <li>CHECKPOINT</li>
+    <li>RECOVERY MANAGER</li>
+    <li>MAGNETIC TAPE</li>
+    <li>GRANDFATHER-FATHER-SON</li>
+    <li>PARTIAL BACKUPS</li>
+  </ul>
+</div>
+
+<div class="">
+  <b>Updating Data</b>
+  <ul>
+    <li>Update in Batch
+      <div class="">
+        <span>Stages in batch processing:</span>
+        <ol>
+          <li>The collecting and storage of the transaction data in a transaction file. It involves sorting the data into sequential order.</li>
+          <li>The processing of the data by updating the master file. This is not always a simple process. The updating of the master file may involve data additions, updates and deletions that need to happen in a certain order. If one error occurs in the batch, then the entire batch is rejected.</li>
+        </ol>
+      </div>
+    </li>
+    <li>Update in Realtime</li>
+  </ul>
+</div>
+
+<div class="">
+  <b>Other Information Process</b>
+  <b>Data Collection for a Transaction Processing System</b>
+  <ul>
+    <li>Hardware
+      <ul>
+        <li>MICR (MAGNETIC INK CHARACTER RECOGNITION)</li>
+        <li>BARCODE READERS</li>
+      </ul>
+    </li>
+    <li>Forms
+      <ul>
+        <li>Paper forms</li>
+        <li>On-screen forms</li>
+        <li>Web form</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div class="">
+  <b>Data Analysis for a Transaction Processing System</b>
+  <p>
+    The results of processing transaction are stored in a database and analyzed in many ways to meet the information needs of users.
+  </p>
+</div>
+
+<div class="">
+  <b>Decision Support System</b>
+  <p>
+    Which use data mining to find relationships and patterns in data stored in a database.
+    This may uncover trends between the sales of certain things for instance such as pies and sauce.
+  </p>
+</div>
+
+<div class="">
+  <b>Issues Related to Transaction Processing Systems</b>
+  <ul>
+    <li>The Nature of Work</li>
+    <li>Automation of Jobs</li>
+    <li>People as Participants</li>
+    <li>Data Handling</li>
+    <li>Bias</li>
+    <li>Data Security</li>
+    <li>Data Accuracy</li>
+    <li>Data Integrity
+      <div class="">
+        <span>Integrity in a RTTPS is provided by passing the ACID test:</span>
+        <ul>
+          <li>ATOMICITY</li>
+          <li>CONSISTENCY</li>
+          <li>ISOLATION</li>
+          <li>DURABILITY</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
