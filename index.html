@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>INFOTECH202: Computer Applications and Information Systems</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" >
+  </head>
+  <body ng-controller="appCtrl as vm" ng-cloak>
+    <div class="page-header">
+      <h1>INFOTECH202:
+        <small>Computer Applications and Information Systems 2nd Sem, 2015-2016</small></h1>
+    </div>
+    <div class="row">
+      <!-- NAVIGATION -->
+
+      <div class="col-sm-3 navbar-container">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Topics</h3>
+          </div>
+          <div class="panel-body">
+            <ul class="nav nav-pills nav-stacked">
+              <li role="presentation" ng-repeat="topic in vm.mainTopics" ng-class="{active:topic.is_active}" ng-click="vm.chooseTopic(topic)">
+                <a href="#">{{ topic.title }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- CONTENT -->
+      <div class="col-sm-9">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">{{ vm.chosenTopic.title }}</h3>
+          </div>
+          <div class="panel-body">
+            <ul class="nav nav-pills">
+              <li role="presentation" ng-repeat="sub_topic in vm.chosenTopic.sub_topics" ng-class="{active:sub_topic.is_active}" ng-click="vm.chooseSubTopic(vm.chosenTopic, sub_topic)">
+                <a href="#">{{ sub_topic.title }}</a>
+              </li>
+            </ul>
+            <hr>
+            <div class="slide-animate" ng-include="vm.chosenSubTopic.url"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+  </body>
+</html>
